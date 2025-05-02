@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sign Up - Besnik Real Estate</title>
+  <link rel="shortcut icon" href="images/works-icon-1.svg" type="image/x-icon">
+  <link rel="stylesheet" href="css/style.css">
+  <style>
+    .signup-container {
+      max-width: 450px;
+      margin: 80px auto;
+      padding: 30px;
+      border-radius: 10px;
+      box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+      background-color: #fff;
+    }
+
+    .form-group {
+      margin-bottom: 20px;
+    }
+
+    .form-group label {
+      display: block;
+      margin-bottom: 8px;
+      font-weight: 600;
+      color: #333;
+    }
+
+    .form-group input {
+      width: 100%;
+      padding: 12px 15px;
+      border: 1px solid #ddd;
+      border-radius: 6px;
+      font-size: 16px;
+      transition: all 0.3s ease;
+    }
+
+    .form-group input:focus {
+      border-color: #0689FF;
+      outline: none;
+      box-shadow: 0 0 0 2px rgba(6, 137, 255, 0.2);
+    }
+
+    .form-btn {
+      width: 100%;
+      padding: 12px;
+      background: #0689FF;
+      color: white;
+      border: none;
+      border-radius: 6px;
+      font-size: 16px;
+      font-weight: 600;
+      cursor: pointer;
+      transition: all 0.3s ease;
+    }
+
+    .form-btn:hover {
+      background: #0071d8;
+      transform: translateY(-2px);
+    }
+
+    .form-footer {
+      margin-top: 20px;
+      text-align: center;
+      color: #666;
+    }
+
+    .form-footer a {
+      color: #0689FF;
+      text-decoration: none;
+      font-weight: 600;
+    }
+
+    .form-header {
+      text-align: center;
+      margin-bottom: 30px;
+    }
+
+    .form-header h1 {
+      color: #333;
+      font-size: 28px;
+      margin-bottom: 10px;
+    }
+
+    .form-header p {
+      color: #666;
+    }
+  </style>
+</head>
+
+<body>
+  <!-- Navigation-start -->
+  <header>
+    <div class="container">
+      <nav class="navigation">
+        <a href="index.html" class="logo">
+          <img src="images/logo.svg" alt="Logo">
+        </a>
+        <div class="mobile_menu_icon">
+          <div class="mobile_menu_toggle"></div>
+        </div>
+        <ul class="nav_menu">
+          <div class="nav_links">
+            <li class="nav_list">
+              <a href="index.html" class="nav_link">Home</a>
+            </li>
+            <li class="nav_list">
+              <a href="index.html#partner" class="nav_link">Partner</a>
+            </li>
+            <li class="nav_list">
+              <a href="index.html#hows-it-work" class="nav_link">Features</a>
+            </li>
+            <li class="nav_list">
+              <a href="index.html#featured-properties" class="nav_link">Listed</a>
+            </li>
+            <li class="nav_list">
+              <a href="index.html#newsletter" class="nav_link">Newsletter</a>
+            </li>
+          </div>
+          <div class="cta_links">
+            <li class="nav_list">
+              <a href="signup.html" class="nav_link signup-link active">Sign up</a>
+            </li>
+            <li class="nav_list">
+              <a href="login.html" class="nav_link btn-primary login-btn">Login</a>
+            </li>
+          </div>
+        </ul>
+      </nav>
+    </div>
+  </header>
+  <!-- Navigation-end -->
+
+  <!-- Signup Form -->
+  <section>
+    <div class="container">
+      <div class="signup-container">
+        <div class="form-header">
+          <h1>Create an Account</h1>
+          <p>Join us to explore the best properties</p>
+        </div>
+        <form id="signupForm">
+          <div class="form-group">
+            <label for="fullname">Full Name</label>
+            <input type="text" id="fullname" name="fullname" placeholder="Enter your full name" required>
+          </div>
+          <div class="form-group">
+            <label for="email">Email Address</label>
+            <input type="email" id="email" name="email" placeholder="Enter your email" required>
+          </div>
+          <div class="form-group">
+            <label for="password">Password</label>
+            <input type="password" id="password" name="password" placeholder="Create a password" required>
+          </div>
+          <div class="form-group">
+            <label for="confirmPassword">Confirm Password</label>
+            <input type="password" id="confirmPassword" name="confirmPassword" placeholder="Confirm your password" required>
+          </div>
+          <button type="submit" class="form-btn">Create Account</button>
+          <div class="form-footer">
+            <p>Already have an account? <a href="login.html">Login</a></p>
+          </div>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer-section-start -->
+  <section id="footer">
+    <div class="container">
+      <div class="footer-bottom">
+        <div>
+          <img src="images/logo.svg" alt="Logo" class="logo">
+        </div>
+        <div>
+          <span class="text-light">
+            Copyright <span class="year">2025</span>.com, tecoritham All rights reserved.
+          </span>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- Footer-section-end -->
+
+  <script src="js/script.js"></script>
+  <script src="js/auth.js"></script>
+</body>
+
+</html>
